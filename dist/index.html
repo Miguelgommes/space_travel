@@ -30,6 +30,28 @@
                 class="size-10 rounded-full border-2 border-cyan-950 object-cover cursor-pointer hover:animate-spin duration-500">
             </figure>
         </header>
+        <form name="form-viagem" id="form-viagem" method="get" action=""> <!--endereço da aplicação de back-end-->
+            <p class="my-5 font-medium text-cyan-300 text-center text-balance lg:text-left">
+                Prencha os dados abaixo para confirmar sua viagem espacial
+            </p>
+            <fieldset class="border border-white/10 rounded-2xl bg-white/10 p-4">
+                <legend class="font-title text-lg font-bold text-cyan-300 px-2">01. Dados do viajante</legend>
+
+                <section class="grid gap-6 lg:grid-cols-2">
+                    <div>
+                        <label for="nome" class="block ml-2 text-sm mb-2 text-slate-300">Nome completo</label>
+                        <input type="text" id="nome" placeholder="Digite seu nome" name="nome" minlength="10" maxlength="30" required class="border border-white/10 bg-slate-950/60 px-2 py-3 outline-none focus:border-cyan-400 focus:bg-white/10 w-full rounded-lg">
+                    </div>
+                    
+                    <div>
+                        <label for="codigo" class="block ml-2 text-sm mb-2 text-slate-300">Código do acesso</label>
+                        <input type="text" id="codigo" placeholder="Digite seu código" name="codigo" minlength="10" maxlength="30" required
+                            class="border border-white/10 bg-slate-950/60 px-2 py-3 outline-none focus:border-cyan-400 focus:bg-white/10 w-full rounded-lg">
+                    </div>
+                </section>
+            </fieldset>
+        </form>
+
     </main>
 </body>
 </html>
