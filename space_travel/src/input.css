@@ -19,6 +19,16 @@
     --color-rock-950: #150231;
 
     --spacing-my-50: 50px;
+
+    --animate-corTexto: mudaCor 20s infinite;
+
+    @keyframes mudaCor{
+        0% {color: rgb(255, 0, 0);}
+        25% {color: rgb(0, 255, 0);}
+        50% {color: rgb(0, 0, 255);}
+        75% {color: rgb(255, 0 255);}
+        100% {color: rgb(255, 255, 0);}
+    }
 }
 
 .astro-esb {
