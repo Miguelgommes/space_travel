@@ -16,22 +16,14 @@
         <header class="flex flex-col items-center justify-between gap-4 lg:flex-row">
             <h1 class="font-title text-4xl font-bold leading-tight md:text-5xl">Space Travel</h1>
             <figure class="flex gap-1">
-                <img src="./images/astro01.jpg" alt="Astronauta 01" class="size-10 rounded-full border-2 border-cyan-950 object-cover
-            cursor-pointer hover:animate-spin duration-500">
-                <img src="./images/astro02.jpg" alt="Astronauta 02" class="size-10 rounded-full border-2 border-cyan-950 object-cover
-            cursor-pointer hover:animate-spin duration-500">
-                <img src="./images/astro03.jpg" alt="Astronauta 03" class="size-10 rounded-full border-2 border-cyan-950 object-cover
-            cursor-pointer hover:animate-spin duration-500">
-                <img src="./images/astro04.jpg" alt="Astronauta 04" class="size-10 rounded-full border-2 border-cyan-950 object-cover
-            cursor-pointer hover:animate-spin duration-500">
-                <img src="./images/astro05.jpg" alt="Astronauta 05" class="size-10 rounded-full border-2 border-cyan-950 object-cover
-            cursor-pointer hover:animate-spin duration-500">
-                <img src="./images/astro06.jpg" alt="Astronauta 06" class="size-10 rounded-full border-2 border-cyan-950 object-cover
-            cursor-pointer hover:animate-spin duration-500">
-                <img src="./images/astro07.jpg" alt="Astronauta 07" class="size-10 rounded-full border-2 border-cyan-950 object-cover
-            cursor-pointer hover:animate-spin duration-500">
-                <img src="./images/astro08.jpg" alt="Astronauta 08" class="size-10 rounded-full border-2 border-cyan-950 object-cover
-            cursor-pointer hover:animate-spin duration-500">
+                <img src="./images/astro01.jpg" alt="Astronauta 01" class="astro-esb">
+                <img src="./images/astro02.jpg" alt="Astronauta 02" class="astro-esb">
+                <img src="./images/astro03.jpg" alt="Astronauta 03" class="astro-esb">
+                <img src="./images/astro04.jpg" alt="Astronauta 04" class="astro-esb">
+                <img src="./images/astro05.jpg" alt="Astronauta 05" class="astro-esb">
+                <img src="./images/astro06.jpg" alt="Astronauta 06" class="astro-esb">
+                <img src="./images/astro07.jpg" alt="Astronauta 07" class="astro-esb">
+                <img src="./images/astro08.jpg" alt="Astronauta 08" class="astro-esb">
             </figure>
         </header>
 
@@ -198,6 +190,33 @@
                     </section>
                 </div>
             </fieldset>
+
+            <!-- 3a. seção de dados -->
+            <fieldset class="border border-white/10 rounded-2xl bg-white/10 p-4 my-6">
+                <legend class="font-title text-lg font-bold text-cyan-300 px-2">
+                    03. Observações
+                </legend>
+
+                <!-- textarea -->
+                <div>
+                    <label for="mensagem"  class=" block ml-2 text-sm mb-2 text-slate-300">
+                        Conte-nos sobre a sua viagem
+                    </label>
+                    <textarea name="mensagem" id="mensagem" class="w-full resize-none  h-30 border border-white/10 rounded-lg bg-slate-950/60 p-3 outline-none focus:border-cyan-400 focus:bg-white/10 transition duration-700" placeholder="Escreva uma mensagem ou alguma informção importante"></textarea>
+                </div>
+
+                <!-- checkbox - termos da viagem -->
+                <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" name="termos" id="termos" value="termos" class="size-4">
+                    <span class="text-[10px] font-extralight text-white/50">Concordo com os termos da viagem espacial e autorizo o processamento dos meus dados</span>
+                </label>
+
+            </fieldset>
+
+            <div>
+                <button type="button" id="btn-confirmar" class="w-full bg-linear-to-r from-cyan-400 to-fuchsia-500 px-4 py-5 rounded-lg font-bold text-slate-950 cursor-pointer transition hover:scale-[1.02] duration-700">Confirmar viagem</button>
+            </div>
+
         </form>
     </main>
 </body>
